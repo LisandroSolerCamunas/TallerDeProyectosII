@@ -15,19 +15,19 @@ fetch('tiposDolar.json')
                 let opcionSeleccionada = this.id; // Cambio aquí
                 let TotalDolar, tipoDolar;
                 if (opcionSeleccionada === "DolarOficial") {
-                    TotalDolar = (parseInt(CantidadPesos.value) / 1629).toFixed(2);
+                    TotalDolar = (parseInt(CantidadPesos.value) / 239.5).toFixed(2);
                     tipoDolar = tiposDolar.Oficial;
                     resultadoElement.innerHTML = "El total de Pesos a Dólar " + tipoDolar + " sería de " + TotalDolar;
                     historial.push({ resultado: TotalDolar, tipoDolar });
                     guardarHistorialEnLocalStorage();
                 } else if (opcionSeleccionada === "DolarBlue") {
-                    TotalDolar = (parseInt(CantidadPesos.value) / 1690).toFixed(2);
+                    TotalDolar = (parseInt(CantidadPesos.value) / 482).toFixed(2);
                     tipoDolar = tiposDolar.Blue;
                     resultadoElement.innerHTML = "El total de Pesos a Dólar " + tipoDolar + " sería de " + TotalDolar;
                     historial.push({ resultado: TotalDolar, tipoDolar });
                     guardarHistorialEnLocalStorage();
                 } else if (opcionSeleccionada === "DolarTurista") {
-                    TotalDolar = (parseInt(CantidadPesos.value) / 2073).toFixed(2);
+                    TotalDolar = (parseInt(CantidadPesos.value) / 503).toFixed(2);
                     tipoDolar = tiposDolar.Turista;
                     resultadoElement.innerHTML = "El total de Pesos a Dólar " + tipoDolar + " sería de " + TotalDolar;
                     historial.push({ resultado: TotalDolar, tipoDolar });
